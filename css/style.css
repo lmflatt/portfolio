@@ -31,6 +31,7 @@ p {
 
 .parallax-large {
   min-height: 680px;
+  height: 58em;
   padding-top: 160px;
 }
 
@@ -66,9 +67,13 @@ p {
   }
 
   .parallax-large {
-    min-height: 380px;
-    padding-top: 0;
+    max-height: 450px;
+    min-height: 350px;
   }
+    
+    .parallax-large h1 {
+        font-size: 40px;
+    }
 }
 
 .icon-block {
