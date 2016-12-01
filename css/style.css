@@ -15,8 +15,29 @@ p {
   line-height: 2rem;
 }
 
+.fa{
+    color: #383838;
+}
+
 .button-collapse {
   color: #26a69a;
+}
+
+#padded-container {
+    position: relative;
+    padding-right: 50px;
+    padding-left: 50px;
+    z-index: 2;
+}
+
+.bg-box {
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    top: 0;
+    left: 15%;
+    background-color: #001521;
+    opacity: .75;
 }
 
 .parallax-container {
@@ -39,6 +60,26 @@ p {
   opacity: 0;
 }
 
+#headshot {
+    max-width: 200px;
+    box-shadow: -2px -2px 20px #555;
+}
+
+#about-parallax {
+  position: absolute;
+  left: 45%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 190%;
+    max-width: 110%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#personal-list li,
+#img-list li,
 #stagger-list-1 li,
 #stagger-list-2 li,
 #stagger-list-3 li {
@@ -71,11 +112,27 @@ p {
     .card-image {
         height: 250px;
     }
+    
+    #about-parallax {
+        min-width: 150%;
+        max-width: 150%;
+    }
 }
 
 @media only screen and (max-width : 1100px) {
     .card-image {
         height: 200px;
+    }
+    
+    #about-parallax {
+        min-width: 200%;
+        max-width: 200%;
+    }
+    
+    .bg-box {
+        width: 100%;
+        left: 0;
+        opacity: .4;
     }
 }
 
@@ -89,13 +146,30 @@ p {
   }
   .card-image {
     height: 160px;
-}
+    }
+    #about-parallax {
+        min-width: 250%;
+        max-width: 250%;
+    }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+    
+    #padded-container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    #padded-container h5 {
+        font-size: 15px;
+    }
+    
+    .flow-text {
+        font-size: 12px;
+    }
 
   .parallax-large {
     max-height: 450px;
@@ -107,6 +181,10 @@ p {
     }
     .card-image {
         height: 300px;
+    }
+    #about-parallax {
+        min-width: 350%;
+        max-width: 350%;
     }
 }
 

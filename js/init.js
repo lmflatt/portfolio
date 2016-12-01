@@ -5,10 +5,10 @@
     $('.parallax').parallax();
 
     var options = [
-    {selector: '#box-1', offset: 20, callback: function(el) {
+    {selector: '#box-1', offset: 100, callback: function(el) {
       Materialize.fadeInImage($(el));
     } },
-    {selector: '#box-2', offset: 60, callback: function(el) {
+    {selector: '#box-2', offset: 140, callback: function(el) {
       Materialize.fadeInImage($(el));
     } },
     {selector: '#box-3', offset: 100, callback: function(el) {
@@ -16,6 +16,12 @@
     } },
     {selector: '#box-4', offset: 140, callback: function(el) {
       Materialize.fadeInImage($(el));
+    } },
+    {selector: '#personal-list', offset: 150, callback: function(el) {
+      Materialize.showStaggeredList($(el));
+    } },
+    {selector: '#img-list', offset: 200, callback: function(el) {
+      Materialize.showStaggeredList($(el));
     } },
     {selector: '#stagger-list-1', offset: 150, callback: function(el) {
       Materialize.showStaggeredList($(el));

@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
   <div class="navbar-fixed">
@@ -16,17 +17,17 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">LF</a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
+          <li><a href="#CONTACT">Contact</a></li>
+          <li><a href="#ABOUT">About</a></li>
+          <li><a href="#SKILLS">Skills</a></li>
+          <li><a href="#PORTFOLIO">Portfolio</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
-          <li><a href="#">Navbar Link</a></li>
+          <li><a href="#CONTACT">Contact</a></li>
+          <li><a href="#ABOUT">About</a></li>
+          <li><a href="#SKILLS">Skills</a></li>
+          <li><a href="#PORTFOLIO">Portfolio</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
@@ -35,17 +36,18 @@
 
   <div id="index-banner" class="parallax-container parallax-large">
     <div class="section no-pad-bot">
-      <div id="with-text-shadow" class="container">
+      <div id="padded-container" class="container">
         <br><br>
         <h1 class="header center text-lighten-2">Lee Michael Flatt</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Web Developer</h5>
+          <h5 class="header col s12 light">A highly motivated programmer with Front-End, Back-End, and QA experience eager to expand his skill set. Well acquainted with Agile and TDD methodologies. Works comfortably as part of a team in either a leading or subordinate role. A strong willingness to learn from peers and supervisors alike to continually improve his working knowledge and produce a professional end product. A sharp attention to detail combined with excellent logical problem solving skills to create thorough, simple, and comprehensible solutions.</h5>
         </div>
         <br><br>
 
       </div>
     </div>
     <div class="parallax"><img src="code-bg1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="bg-box"></div>
   </div>
 
 
@@ -53,39 +55,56 @@
     <div class="center"><h1>Contact</h1></div>
     <div class="section">
         <div class="row">
-            <div id="box-1" class="fade-btn col s6 m3 center">
-                <p class="no-margin_bot">
-                    <i class="medium material-icons black-text">contact_phone</i>
-                </p><p class="no-margin hide-on-small-and-down">Lee Flatt</p>
-                <p class="no-margin"><a href="tel:1-615-200-5788"> 615.840.1073</a></p>
-                <p></p>
+            <div class="col s12 m6 row">
+                <ul class="col s12 m6 row" id="personal-list">
+                    <li><h4>Lee Flatt</h4></li>
+                    <li><h5>Nashville, TN</h5></li>
+                    <li><a href="https://github.com/lmflatt">
+                        <i class="fa fa-github fa-4x" aria-hidden="true"></i>
+                    </a></li>
+                </ul>
+                <ul class="col s12 m6 row" id="img-list">
+                    <li><img src="headshot.jpg" id="headshot" /></li>
+                </ul>
             </div>
-            <div id="box-2" class="fade-btn col s6 m3 center">
-                <p class="no-margin_bot">
-                    <a href="mailto:lee.m.flatt@gmail.com?Subject=Hi%20Lee,%20from%20your%20portfolio" target="_top">
-                        <i class="medium material-icons black-text hoverable">email</i>
-                    </a>
-                </p><p class="no-margin hide-on-small-and-down">Send me an e-mail</p>
-                <p class="no-margin hide-on-med-and-up">e-mail</p>
-                <p></p>
-            </div>
-            <div id="box-3" class="fade-btn col s6 m3 center">
-                <p class="no-margin_bot">
-                    <a href="resume.pdf"><i class="medium material-icons black-text hoverable">description</i>
-                    </a>
-                </p><p class="no-margin hide-on-small-and-down">Take a look at my resume</p>
-                <p class="no-margin hide-on-med-and-up">resume</p>
-                <p></p>
+            
+            <div class="col s12 m6 row">
+                <div id="box-1" class="fade-btn col s6 center">
+                    <p class="no-margin_bot">
+                        <a href="tel:1-615-840-1073" >
+                            <i class="medium material-icons black-text hoverable">contact_phone</i>
+                        </a>
+                    </p>
+                    <p class="no-margin">615.840.1073</a></p>
+                    <p></p>
+                </div>
+                <div id="box-2" class="fade-btn col s6 center">
+                    <p class="no-margin_bot">
+                        <a href="mailto:lee.m.flatt@gmail.com?Subject=Hi%20Lee,%20from%20your%20portfolio" target="_blank">
+                            <i class="medium material-icons black-text hoverable">email</i>
+                        </a>
+                    </p><p class="no-margin hide-on-small-and-down">Send me an e-mail</p>
+                    <p class="no-margin hide-on-med-and-up">e-mail</p>
+                    <p></p>
+                </div>
+                <div id="box-3" class="fade-btn col s6 center">
+                    <p class="no-margin_bot">
+                        <a href="resume.pdf" target="_blank"><i class="medium material-icons black-text hoverable">description</i>
+                        </a>
+                    </p><p class="no-margin hide-on-small-and-down">Take a look at my resume</p>
+                    <p class="no-margin hide-on-med-and-up">resume</p>
+                    <p></p>
 
-            </div>
-            <div id="box-4" class="fade-btn col s6 m3 center">
-                <p class="no-margin_bot">
-                    <a href="https://www.linkedin.com/in/zach-benton">
-                        <i class="medium material-icons black-text hoverable">perm_device_information</i>
-                    </a>
-                </p><p class="no-margin hide-on-small-and-down">Follow me on LinkedIn</p>
-                <p class="no-margin hide-on-med-and-up">LinkedIn</p>
-                <p></p>
+                </div>
+                <div id="box-4" class="fade-btn col s6 center">
+                    <p class="no-margin_bot">
+                        <a href="https://www.linkedin.com/in/lee-m-flatt-92479a13" target="_blank">
+                            <i class="medium material-icons black-text hoverable">perm_device_information</i>
+                        </a>
+                    </p><p class="no-margin hide-on-small-and-down">Follow me on LinkedIn</p>
+                    <p class="no-margin hide-on-med-and-up">LinkedIn</p>
+                    <p></p>
+                </div>
             </div>
         </div>
     </div>
@@ -101,15 +120,17 @@
                 </div>
                 <div class="row center">
                     <p class="header col s12 flow-text">
-                        
+                        I came to to web development from a career in music as a composer and an educator. It was hard to leave a career I loved and had studied so hard for, but writing code offers what really matters to me: challenging work that requires creativity and logical problem solving. I am highly motivated, and I genuinely enjoy learning new skills and expanding what I can accomplish.<br/><br/>
+                        I still practice music since it's gone from career to number one amateur passion. As a private teacher, I learned to play every wind instrument, piano, and even a little bit of guitar. My hands were a bit too large for the violin, but nobody's perfect. I also enjoyed a part-time career as a singer with the Nashville Opera during college. As a composer, I've written a large body of works for many types of ensemble, and I've spent endless hours arguing and lecturing about Bach and Chopin. You never have to hear it as long as I'm not forced to rebut ludicrous claims about a pop star.<br/><br/>
+                        Aside from those two main passions, I can hold my own in a game of golf or racquetball, and I love taking walks with my dog. I'm not a great athlete, but I love to move, play, and compete. And when I've moved enough, I'm still up for playing and competing in video games.
                     </p>
                 </div>
             </div>
         </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img id="about-parallax" src="me-4.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
+  <div id="SKILLS" class="container">
     <div class="section">
 
       <div class="row">
@@ -150,15 +171,15 @@
   </div>
 
 
-  <div class="parallax-container valign-wrapper">
+  <div id="PORTFOLIO" class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h1 class="header col s12 light">Portfolio</h1>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="cogs.jpg" alt="Unsplashed background img 3"></div>
   </div>
     
   <div class="container">
