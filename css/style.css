@@ -71,7 +71,7 @@ p {
   bottom: 0;
   min-width: 100%;
   min-height: 190%;
-    max-width: 110%;
+  max-width: 110%;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transform: translateX(-50%);
@@ -100,6 +100,11 @@ p {
 
 .card-image {
     height: 400px;
+}
+
+#closing-paragraph {
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 @media only screen and (max-width : 1800px) {
