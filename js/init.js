@@ -6,8 +6,7 @@
       edge: 'left',
       closeOnClick: true,
       draggable: true
-    }
-  );
+    });
     $('.parallax').parallax();
 
     var options = [
